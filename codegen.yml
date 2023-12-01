@@ -1,0 +1,8 @@
+schema: https://rickandmortyapi.com/graphql # URL do esquema GraphQL
+documents: './src/**/*.tsx' # Caminho para os arquivos contendo consultas GraphQL
+generates:
+  ./src/types/graphql.ts: # Caminho de saída para o arquivo gerado
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
